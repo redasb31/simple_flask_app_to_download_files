@@ -52,7 +52,7 @@ $(document).ready(function() {
 
       // generate HTML for each course card
       var courseCards = "";
-      if 
+
       for (var i = 0; i < courses.length; i++) {
         var course = courses[i];
 
