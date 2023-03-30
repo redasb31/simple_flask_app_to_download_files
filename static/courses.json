@@ -1,0 +1,49 @@
+{
+  "courses": [
+  {
+  "title": "Computer Science",
+  "description": "Includes courses in programming languages, algorithms and data structures, computer architecture, software engineering, artificial intelligence, machine learning, database systems, and computer networking.",
+  "id":"1"
+  },
+  {
+  "title": "Architecture and Urbanism",
+  "description": "Includes courses in design theory, architectural history, building materials and construction technology, environmental sustainability, urban planning and design, and the integration of technology and design.",
+  "id":"2"
+  },
+  {
+  "title": "Business Administration",
+  "description": "Includes courses in accounting, finance, marketing, operations management, human resources management, business ethics, and entrepreneurship.",
+  "id":"3"
+  },
+  {
+  "title": "Electrical Engineering",
+  "description": "Includes courses in circuit analysis, electronics, electromagnetism, digital systems, control systems, signal processing, and communication systems.",
+  "id":"4"
+  },
+  {
+  "title": "Environmental Science",
+  "description": "Includes courses in ecology, environmental chemistry, earth systems science, environmental policy and law, conservation biology, and sustainable resource management.",
+  "id":"5"
+  },
+  {
+  "title": "Journalism and Communications",
+  "description": "Includes courses in media law and ethics, news writing and reporting, broadcast journalism, public relations, advertising, media history and theory, and multimedia storytelling.",
+  "id":"6"
+  },
+  {
+  "title": "Psychology",
+  "description": "Includes courses in cognitive and behavioral psychology, abnormal psychology, developmental psychology, social psychology, statistics and research methods, and neuroscience.",
+  "id":"7"
+  },
+  {
+  "title": "Biology",
+  "description": "Includes courses in molecular and cellular biology, genetics, evolution, ecology, microbiology, and physiology.",
+  "id":"8"
+  },
+  {
+  "title": "Political Science",
+  "description": "Includes courses in comparative politics, international relations, political theory, public policy and administration, American government and politics, and research methods.",
+  "id":"9"
+  }
+  ]
+  }

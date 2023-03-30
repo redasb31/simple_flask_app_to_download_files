@@ -1,0 +1,50 @@
+{
+    "courses": [
+        {
+            "title": "Algebra",
+            "description": "This course covers algebraic concepts and equations.",
+            "files": [
+                {
+                    "filename": "Introduction to Algebra.pdf",
+                    "link": "1_1_1.pdf"
+                },
+                {
+                    "filename": "Linear Equations and Inequalities.pdf",
+                    "link": "1_1_2.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Calculus",
+            "description": "This course covers calculus concepts and applications.",
+            "files": [
+                {
+                    "filename": "Limits and Continuity.pdf",
+                    "link": "1_2_1.pdf"
+                },
+                {
+                    "filename": "Differentiation.pdf",
+                    "link": "1_2_2.pdf"
+                },
+                {
+                    "filename": "Integration.pdf",
+                    "link": "1_2_3.pdf"
+                }
+            ]
+        },
+        {
+            "title": "C Programming",
+            "description": "This course covers programming concepts using the C language.",
+            "files": [
+                {
+                    "filename": "Introduction to C Programming.pdf",
+                    "link": "1_3_1.pdf"
+                },
+                {
+                    "filename": "Control Structures.pdf",
+                    "link": "1_3_2.pdf"
+                }
+            ]
+        }
+    ]
+}

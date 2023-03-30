@@ -5,17 +5,33 @@ import requests
 
 app = Flask(__name__)
 
+    
+
 @app.route('/', methods=['GET'])
 def index():
+    # check if a get parameter is set
+    # if request.args.get('id'):
+    #     #get the value of the get parameter
+    #     query = request.args.get('id')
+    #     print(query)
+    #     #check if query is a number
+    #     if not re.match('^\d+$', query):
+    #         return render_template('file_not_found.html')
+    #     return render_template('search.html')
     return render_template('index.html')
 
-@app.route('/resources', methods=['POST'])
-def download_file():
-    url = request.form.get('url')
-    local_file = request.form.get('local_file')
-    filename = request.form.get('filename')
+@app.route('/search',methods=['GET'])
+def search():
+    return render_template('search.html')
 
-    if local_file:
+
+@app.route('/resources', methods=['GET'])
+def download_file():
+    url = request.args.get('url')
+    local_file = request.args.get('local_file')
+    filename = request.args.get('filename')
+
+    if filename:
         if not re.match(r'^[a-zA-Z0-9_\-\.]+$', filename):
             abort(400, 'Invalid filename')
         
