@@ -5,12 +5,19 @@
             "description": "This course covers algebraic concepts and equations.",
             "files": [
                 {
+                    "type": "pdf",
                     "filename": "Introduction to Algebra.pdf",
                     "link": "1_1_1.pdf"
                 },
                 {
+                    "type": "pdf",
                     "filename": "Linear Equations and Inequalities.pdf",
                     "link": "1_1_2.pdf"
+                },              
+                {
+                    "type": "video",
+                    "filename": "Introduction to Matrices.mp4",
+                    "link": "1_1_3.mp4"
                 }
             ]
         },
@@ -19,16 +26,24 @@
             "description": "This course covers calculus concepts and applications.",
             "files": [
                 {
+                    "type": "pdf",
                     "filename": "Limits and Continuity.pdf",
                     "link": "1_2_1.pdf"
                 },
                 {
+                    "type": "pdf",
                     "filename": "Differentiation.pdf",
                     "link": "1_2_2.pdf"
                 },
                 {
+                    "type": "pdf",
                     "filename": "Integration.pdf",
                     "link": "1_2_3.pdf"
+                },              
+                {
+                    "type": "video",
+                    "filename": "Arithmetic Sequences and Series.mp4",
+                    "link": "1_2_4.mp4"
                 }
             ]
         },
@@ -37,10 +52,12 @@
             "description": "This course covers programming concepts using the C language.",
             "files": [
                 {
+                    "type": "pdf",
                     "filename": "Introduction to C Programming.pdf",
                     "link": "1_3_1.pdf"
                 },
                 {
+                    "type": "pdf",
                     "filename": "Control Structures.pdf",
                     "link": "1_3_2.pdf"
                 }

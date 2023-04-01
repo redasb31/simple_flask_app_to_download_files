@@ -74,9 +74,26 @@ $(document).ready(function() {
         var files = course.files;
         for(var j = 0; j<files.length;j++){
           var file = files[j];
-          console.log(file);
+          var type = file.type;
+          var viewlink=`/resources?filename=${file.link}`;
+          var text = "View"
+          if (type=="video"){
+            viewlink=`/video?videolink=${file.link}&title=${file.filename}`;
+            text="Watch";
+          };
           courseCards += `
-          <a href="/resources?filename=${file.link}" class="list-group-item list-group-item-action">${file.filename}</a>
+          <div class="container list-group-item-action list-group-item border-0">
+          <div class="row">
+              <h5 href="" >${file.filename}</h5>
+            </div>
+            <div class="row">
+            <div class="btn-group btn-group-justified" >
+              <a class="btn btn-danger col1 " href="${viewlink}" role="button">${text}</a>
+              <a class="btn btn-outline-danger col1 " href="/resources?filename=${file.link}&download=1" role="button">Download</a>
+            </div>
+            </div>
+            <hr>
+          </div>
           `
 
         }

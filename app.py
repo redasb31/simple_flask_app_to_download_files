@@ -5,19 +5,15 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/video',methods=['GET'])
+def video_player():
+    video_url = request.args.get('videolink')
+    title = request.args.get('title').split('.')[0]
+    return render_template('videoplayer.html', video_url=video_url, title=title)
     
 
 @app.route('/', methods=['GET'])
 def index():
-    # check if a get parameter is set
-    # if request.args.get('id'):
-    #     #get the value of the get parameter
-    #     query = request.args.get('id')
-    #     print(query)
-    #     #check if query is a number
-    #     if not re.match('^\d+$', query):
-    #         return render_template('file_not_found.html')
-    #     return render_template('search.html')
     return render_template('index.html')
 
 @app.route('/search',methods=['GET'])
@@ -32,6 +28,9 @@ def download_file():
     filename = request.args.get('filename')
 
     if filename:
+        as_attachment=False
+        if request.args.get('download'):
+            as_attachment=True
         if not re.match(r'^[a-zA-Z0-9_\-\.]+$', filename):
             abort(400, 'Invalid filename')
         
@@ -39,7 +38,7 @@ def download_file():
         # serve the local file from the server
         if not os.path.isfile(filename):
             return render_template('file_not_found.html')
-        return send_file(filename, as_attachment=True)
+        return send_file(filename, as_attachment=as_attachment)
 
     # validate url to avoid injection attacks
     if not re.match(r'^https?://', url):
