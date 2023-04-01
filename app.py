@@ -21,6 +21,11 @@ def search():
     return render_template('search.html')
 
 
+@app.route('/about',methods=['GET'])
+def about():
+    return render_template('about.html')
+
+
 @app.route('/resources', methods=['GET'])
 def download_file():
     url = request.args.get('url')
